@@ -1,0 +1,130 @@
+.wrap {
+  padding: 10rem 2.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.glow {
+  position: absolute;
+  width: 800px;
+  height: 600px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(ellipse, var(--glow) 0%, transparent 70%);
+  pointer-events: none;
+  transition: background 0.4s;
+}
+.pre {
+  font-size: 0.6rem;
+  letter-spacing: 0.22em;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+  transition: color 0.4s;
+  position: relative;
+}
+.h2 {
+  font-family: var(--serif);
+  font-size: clamp(2.6rem, 5vw, 4.8rem);
+  font-weight: 300;
+  line-height: 1.05;
+  color: var(--fg);
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+  position: relative;
+  transition: color 0.4s;
+}
+.h2 em {
+  font-style: italic;
+  color: var(--gold-lt);
+  transition: color 0.4s;
+}
+.sub {
+  font-size: 0.9rem;
+  color: var(--muted);
+  max-width: 440px;
+  margin: 0 auto 3rem;
+  line-height: 1.85;
+  position: relative;
+  transition: color 0.4s;
+}
+.slots {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  margin: 2rem auto 0.5rem;
+  position: relative;
+}
+.slotTaken {
+  width: 28px;
+  height: 5px;
+  background: var(--gold);
+}
+.slotOpen {
+  width: 28px;
+  height: 5px;
+  background: var(--border2);
+  border: 1px solid var(--border);
+}
+.slotText {
+  font-size: 0.64rem;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+  margin-bottom: 2rem;
+  position: relative;
+  transition: color 0.4s;
+}
+.btns {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+.btnPrimary {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold-btn-text);
+  background: var(--gold);
+  padding: 0.95rem 2rem;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+}
+.btnPrimary:hover {
+  background: var(--gold-lt);
+  transform: translateY(-2px);
+}
+.btnGhost {
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  border: 1px solid var(--border);
+  padding: 0.85rem 2rem;
+  text-decoration: none;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.btnGhost:hover {
+  border-color: var(--gold);
+  transform: translateY(-2px);
+}
+.micro {
+  font-size: 0.72rem;
+  color: var(--muted);
+  margin-top: 1.5rem;
+  position: relative;
+  transition: color 0.4s;
+}
+.micro a {
+  color: var(--gold);
+  text-decoration: none;
+}
+[data-theme="light"] .wrap {
+  background: var(--bg2);
+}
+[data-theme="light"] .h2 em {
+  color: var(--gold);
+}

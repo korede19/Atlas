@@ -1,0 +1,45 @@
+.band {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  transition: border-color 0.4s;
+}
+.stat {
+  padding: 3rem 2.5rem;
+  border-right: 1px solid var(--border);
+  text-align: center;
+  transition: border-color 0.4s;
+}
+.stat:last-child {
+  border-right: none;
+}
+.num {
+  font-family: var(--serif);
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 1;
+  background: linear-gradient(90deg, var(--gold), var(--gold-lt), var(--gold));
+  background-size: 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 4s linear infinite;
+}
+.label {
+  font-size: 0.66rem;
+  color: var(--muted);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-top: 0.4rem;
+  transition: color 0.4s;
+}
+@media (max-width: 860px) {
+  .band {
+    grid-template-columns: 1fr;
+  }
+  .stat {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+}
