@@ -48,8 +48,9 @@ export default function Hero() {
 
         <div className={styles.subWrap}>
           <p className={styles.sub}>
-            Corporate clients at ₦2M+ retainers do not DM. They Google you,
-            evaluate what they find, and make a decision in under 60 seconds.{" "}
+            Corporate clients don’t &quot;slide into DMs.&quot; They conduct due
+            diligence. They Google your name, audit your digital footprint, and
+            decide your worth in 60 seconds.{" "}
             <strong>
               Without a professional digital presence, that decision is never in
               your favour.

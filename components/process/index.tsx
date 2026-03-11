@@ -9,14 +9,14 @@ export default function Process() {
           <span className={styles.labelNum}>04 /</span> How It Works
         </div>
         <h2 className={`${styles.title} reveal`}>
-          From first message to <em>fully launched</em> — three steps.
+          From first message to <em>fully launched</em> — The 3-Step Blueprint.
         </h2>
         <p
           className={`${styles.bodyP} reveal`}
           style={{ maxWidth: "500px", marginTop: ".8rem" }}
         >
-          You run a consulting business. Your time is your most valuable asset.
-          We&apos;ve made this as frictionless as possible.
+          You scale businesses; we build the infrastructure. Our process is
+          designed to be high-impact and low-friction for your schedule.
         </p>
         <div className={styles.list}>
           {PROCESS_STEPS.map((step) => (

@@ -1,5 +1,6 @@
 import { PORTFOLIO_ITEMS, WHATSAPP_SCRATCH } from "@/lib/constant";
 import styles from "./styles.module.css";
+import Image from "next/image";
 
 export default function Portfolio() {
   return (
@@ -20,7 +21,16 @@ export default function Portfolio() {
       <div className={styles.grid}>
         {PORTFOLIO_ITEMS.map((item) => (
           <div key={item.id} className={`${styles.item} reveal`}>
-            {/* Placeholder text (replace with <Image /> when you have screenshots) */}
+            {item.image && (
+              <Image
+                src={item.image}
+                alt={item.name}
+                fill
+                style={{ objectFit: "cover" }}
+                className={styles.bgImage}
+              />
+            )}
+
             <div
               className={styles.placeholder}
               style={
@@ -28,10 +38,6 @@ export default function Portfolio() {
               }
             >
               {item.placeholder}
-              <br />
-              <span className={styles.placeholderSub}>
-                {item.placeholderSub}
-              </span>
             </div>
 
             {/* Hover overlay */}
@@ -46,7 +52,14 @@ export default function Portfolio() {
                   Claim This Slot
                 </a>
               ) : (
-                <span className={styles.overlayText}>View Project</span>
+                <a
+                  className={styles.overlayText}
+                  href={item.ctaHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Project
+                </a>
               )}
             </div>
 
@@ -71,9 +84,6 @@ export default function Portfolio() {
 
       {/* CTA row below grid */}
       <div className={styles.ctaRow}>
-        <p className={styles.note}>
-          Replace placeholders with your best project screenshots.
-        </p>
         <a
           href={WHATSAPP_SCRATCH}
           className={styles.btnGhost}

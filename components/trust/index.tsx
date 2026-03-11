@@ -14,9 +14,9 @@ export default function Trust() {
           </h2>
           <p className={styles.bodyP} style={{ maxWidth: "600px" }}>
             60% deposit to start. 40% on your approval of the final work. Two
-            full revision rounds are included. We don&apos;t release files until
-            you&apos;re genuinely happy — not just satisfied enough to stop
-            complaining.
+            full revision rounds are included. We aren&apos;t looking for
+            &ldquo;satisfied enough&ldquo;, we’re looking for a brand you are
+            proud to lead with.
           </p>
           <div className={styles.faqGrid}>
             {TRUST_FAQS.map((faq) => (

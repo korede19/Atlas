@@ -33,7 +33,7 @@ export const TICKER_ITEMS = [
 export const STATS: StatItem[] = [
   { id: "s1", value: "50+", label: "Projects Delivered" },
   { id: "s2", value: "14", label: "Days Avg. Turnaround" },
-  { id: "s3", value: "100%", label: "Client Satisfaction" },
+  { id: "s3", value: "99.9%", label: "Client Satisfaction" },
 ];
 
 export const PACKAGES: PackageItem[] = [
@@ -77,9 +77,6 @@ export const PACKAGES: PackageItem[] = [
     features: [
       "Custom logo design — 3 concept directions, 1 final refined logo",
       "Full brand identity guide (colours, fonts, usage rules)",
-      "Business card and email signature design",
-      "Social media profile kit (LinkedIn, Twitter, WhatsApp Business)",
-      "Brand assets packaged for print and digital use",
     ],
     ctaLabel: "I Want the Launchpad → Let's Talk",
     ctaHref: WHATSAPP_LAUNCHPAD,
@@ -92,30 +89,38 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     id: "p1",
     category: "Finance Strategy",
-    name: "Authority Rebuild",
-    placeholder: "Portfolio Screenshot 1",
+    name: "Landzille",
+    placeholder: "",
     placeholderSub: "Finance / Website",
+    ctaHref: "https://landzille.com/",
+    image: "/assets/portfolio-1.png",
   },
   {
     id: "p2",
     category: "HR Consulting",
-    name: "Complete Launchpad",
-    placeholder: "Portfolio Screenshot 2",
+    name: "Fouunders Workclave",
+    placeholder: "",
     placeholderSub: "HR / Full Brand",
+    ctaHref: "https://foundersworkclave.com/",
+    image: "/assets/portfolio-2.webp",
   },
   {
     id: "p3",
     category: "Legal Advisory",
     name: "Authority Site",
-    placeholder: "Portfolio Screenshot 3",
+    placeholder: "",
     placeholderSub: "Legal / Website",
+    ctaHref: "https://geotela.com/",
+    image: "/assets/portfolio-3.webp",
   },
   {
     id: "p4",
     category: "Tech Consulting",
-    name: "Full Brand Identity",
-    placeholder: "Portfolio Screenshot 4",
+    name: "GeoTella",
+    placeholder: "",
     placeholderSub: "Tech / Full Brand",
+    ctaHref: "https://givingspherecharity.org/",
+    image: "/assets/portfolio-4.webp",
   },
   {
     id: "p5",
@@ -123,6 +128,8 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     name: "Complete Launchpad",
     placeholder: "Portfolio Screenshot 5",
     placeholderSub: "Executive / Website",
+    ctaHref: "#",
+    image: "/assets/portfolio-5.webp",
   },
   {
     id: "p6",

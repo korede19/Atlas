@@ -36,6 +36,7 @@ export interface PortfolioItem {
   placeholderSub: string;
   isSlot?: boolean;
   ctaHref?: string;
+  image?: string;
 }
 
 export interface PackageItem {

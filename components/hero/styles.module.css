@@ -101,7 +101,7 @@
 .dmsWord {
   display: inline-block;
   position: relative;
-  color: var(--muted);
+  color: #5a5248;
   transition: color 0.4s;
 }
 .dmsWord::after {
@@ -116,10 +116,9 @@
     rgba(220, 39, 67, 0.65),
     rgba(188, 24, 136, 0.65)
   );
-  transform: rotate(-4deg);
+  transform: rotate(-4deg) scaleX(1);
   transform-origin: left;
-  scale: 0 1;
-  animation: scratch 2s 0.5s ease forwards;
+  animation: scratch 2s 0.5s ease-in forwards;
 }
 
 .subWrap {

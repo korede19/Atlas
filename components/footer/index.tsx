@@ -39,7 +39,7 @@ export default function Footer() {
           </ul>
         </nav>
         <p className={styles.copy}>
-          &copy; 2026 Phoenix Atlas &middot; Lagos &amp; Abuja, Nigeria
+          &copy; 2026 Phoenix Atlas &middot; All rights reserved.
         </p>
       </footer>
     </>
