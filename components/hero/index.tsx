@@ -10,9 +10,7 @@ export default function Hero() {
         <p className={styles.eyebrow}>2026 Q2 Promo&nbsp;·&nbsp;7 Slots Only</p>
 
         <h1 className={styles.h1}>
-          Still sending clients
-          <br />
-          to your{" "}
+          Still sending clients to your&nbsp;
           <span className={styles.igWord}>
             <span className={styles.igIcon} aria-label="Instagram">
               <svg
@@ -42,7 +40,7 @@ export default function Hero() {
             </span>
             <em>Instagram</em>
           </span>
-          <br />
+          &nbsp;
           <span className={styles.dmsWord}>DMs?</span>
         </h1>
 

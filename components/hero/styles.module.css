@@ -29,6 +29,7 @@
   padding: 4rem 3rem 4rem 2.5rem;
   position: relative;
   z-index: 2;
+  min-width: 0; /* prevents grid blowout */
 }
 
 .eyebrow {
@@ -52,9 +53,9 @@
 
 .h1 {
   font-family: var(--serif);
-  font-size: clamp(3rem, 5.5vw, 5.5rem);
+  font-size: clamp(4.8rem, 3vw, 3.2rem);
   font-weight: 300;
-  line-height: 0.98;
+  line-height: 1.15;
   color: var(--fg);
   letter-spacing: -0.01em;
   transition: color 0.4s;
@@ -103,6 +104,7 @@
   position: relative;
   color: #5a5248;
   transition: color 0.4s;
+  white-space: nowrap;
 }
 .dmsWord::after {
   content: "";
@@ -128,7 +130,7 @@
 .sub {
   font-size: 0.92rem;
   color: var(--muted);
-  max-width: 400px;
+  max-width: 600px;
   line-height: 1.85;
   font-weight: 300;
   margin-bottom: 2rem;
@@ -187,21 +189,24 @@
   justify-content: center;
   position: relative;
   z-index: 2;
-  padding: 2rem 2rem 2rem 0;
+  padding: 2rem 1rem 2rem 0;
+  min-width: 0;
+  overflow: visible;
 }
+
 .mockScene {
   position: relative;
   width: 100%;
   max-width: 560px;
   height: 460px;
+  flex-shrink: 0;
 }
 
 .mockBrowser {
   position: absolute;
   top: 0;
   left: 0;
-  width: 88%;
-  max-width: 460px;
+  width: 84%;
   background: var(--mock-bg);
   border: 1px solid var(--border);
   border-radius: 10px;
@@ -391,8 +396,8 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 36%;
-  max-width: 190px;
+  width: 34%;
+  max-width: 150px;
   background: var(--mock-bg);
   border: 1px solid var(--border);
   border-radius: 18px;
@@ -488,7 +493,7 @@
 .mockBadge {
   position: absolute;
   top: 10px;
-  right: -15px;
+  right: -10px;
   background: var(--bg2);
   border: 1px solid var(--border);
   padding: 0.45rem 0.8rem;
@@ -519,7 +524,7 @@
 .mockBadge2 {
   position: absolute;
   bottom: 90px;
-  left: -20px;
+  left: -10px;
   background: var(--bg2);
   border: 1px solid var(--border);
   padding: 0.5rem 0.8rem;
@@ -548,7 +553,7 @@
 .mockRing {
   position: absolute;
   top: 60px;
-  right: -25px;
+  right: -10px;
   width: 62px;
   height: 62px;
   background: var(--bg2);
@@ -643,6 +648,6 @@
     padding: 3rem 1.5rem 4rem;
   }
   .h1 {
-    font-size: clamp(2.8rem, 9vw, 4.5rem);
+    font-size: clamp(1.8rem, 7vw, 3rem);
   }
 }
