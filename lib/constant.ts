@@ -125,11 +125,11 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     id: "p5",
     category: "Executive Coaching",
-    name: "Complete Launchpad",
-    placeholder: "Portfolio Screenshot 5",
+    name: "Afrigent Digital",
+    placeholder: "Agency Website",
     placeholderSub: "Executive / Website",
-    ctaHref: "#",
-    image: "/assets/portfolio-5.webp",
+    ctaHref: "https://afrigentdigital.com/",
+    image: "/assets/portfolio-5.png",
   },
   {
     id: "p6",
