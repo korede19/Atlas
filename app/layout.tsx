@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: {
@@ -15,13 +16,15 @@ export const metadata: Metadata = {
     "consultant website Abuja",
     "Phoenix Atlas",
   ],
-  authors: [{ name: "Phoenix Atlas", url: "https://phoenixatlas.com" }],
+  authors: [
+    { name: "Phoenix Atlas", url: "https://buildwithphoenixatlas.com" },
+  ],
   creator: "Phoenix Atlas",
-  metadataBase: new URL("https://phoenixatlas.com"),
+  metadataBase: new URL("https://buildwithphoenixatlas.com"),
   openGraph: {
     type: "website",
     locale: "en_NG",
-    url: "https://phoenixatlas.com",
+    url: "https://buildwithphoenixatlas.com",
     siteName: "Phoenix Atlas",
     title: "Phoenix Atlas — Premium Digital Brands for Consultants",
     description:
@@ -38,7 +41,7 @@ export const metadata: Metadata = {
     images: ["/og-image.jpg"],
   },
   robots: { index: true, follow: true },
-  alternates: { canonical: "https://phoenixatlas.com" },
+  alternates: { canonical: "https://buildwithphoenixatlas.com" },
 };
 
 export const viewport: Viewport = {
@@ -53,10 +56,24 @@ export const viewport: Viewport = {
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
-  // data-theme="dark" is the SSR default; useTheme overrides on client
   return (
     <html lang="en" data-theme="dark">
-      <body>{children}</body>
+      <body>
+        {children}
+
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-HH7JBCNW98"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-HH7JBCNW98');
+          `}
+        </Script>
+      </body>
     </html>
   );
 }
