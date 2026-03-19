@@ -8,10 +8,10 @@ import type {
   StatItem,
 } from "@/types";
 
-export const WHATSAPP_BASE = "https://wa.me/234XXXXXXXXXX";
+export const WHATSAPP_BASE = "https://wa.link/jv5vza";
 export const WHATSAPP_SCRATCH = `${WHATSAPP_BASE}?text=Hi%20Phoenix%20Atlas%2C%20I%20need%20to%20build%20my%20brand%20from%20scratch.`;
 export const WHATSAPP_LAUNCHPAD = `${WHATSAPP_BASE}?text=Hi%20Phoenix%20Atlas%2C%20I%20want%20the%20Consultant%20Launchpad.`;
-export const CAL_LINK = "https://cal.com/YOUR_USERNAME";
+export const CAL_LINK = "https://cal.com/phoenixatlas/discovery-call";
 
 export const NAV_LINKS: NavLink[] = [
   { label: "Work", href: "#work" },
